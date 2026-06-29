@@ -2,27 +2,28 @@
 
 ### 💡 Idea
 
-Scan the array and keep only elements that are not equal to the given value by shifting valid elements into a new position.
+Filter out all occurrences of the given value into a temporary array, then overwrite the original array with the remaining elements.
 
 ---
 
 ### 🧠 Approach
 
-* Traverse the array using pointers
-* Check each element against the target value
-* If element is not equal, copy it forward into result position
-* Skip elements equal to the given value
-* Return the count of valid elements
+* Traverse the input array
+* Check each element against `val`
+* If not equal, store it in a new array `nums1`
+* Keep track of valid count `k`
+* Copy filtered elements back into original array
+* Return `k` as new length
 
 ---
 
 ### ⏱ Complexity
 
 * **Time:** O(n)
-* **Space:** O(1)
+* **Space:** O(n)
 
 ---
 
 ### 🧩 Pattern
 
-Two Pointers (In-place Filtering)
+Two Pointers
