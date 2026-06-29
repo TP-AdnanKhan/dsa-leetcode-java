@@ -29,7 +29,3 @@ Each problem includes:
 
 - Java
 
-## 🔮 Future Improvements
-
-- Group problems by patterns
-- Add revision-friendly notes for each topic
